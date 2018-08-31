@@ -1,0 +1,63 @@
+
+<<html>
+<head>
+<script language="JavaScript">
+function validate(){
+var name=document.f.login_username.value;
+var b=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+if(!b.test(name)){
+alert("please enter a valid email!");
+}
+
+}
+</script>
+</head>
+<body leftmargin="500" >
+<form name="f" >
+<p style="font-family:arial;margin-top:100;font-size:28;color:purple;">
+&emsp;&emsp;&emsp;&emsp;&nbsp;<b>Login</b></p>
+
+
+
+   
+   <input type="text" 
+          name="login_username" placeholder="Username"
+	      style="font-size:16;height:35;width:250"
+		  size="20"
+		  
+	      >
+		  <br><br>
+
+
+<p>
+   
+   <input type="password" 
+          name="login_password" placeholder="Password"
+		  style="font-size:16;height:35;width:250" 
+		  size="20" >
+</p>
+
+
+
+<p>
+   <button type="submit" 
+        size="22" 
+		style="font-size:18;
+		onClick="validate()">
+    &emsp;&emsp;&emsp;&emsp;&emsp;Log In
+    &emsp;&emsp;&emsp;&emsp;&emsp;
+   </button>
+</p>
+
+<p style="font-family:arial;font-size:12;">
+  <label>
+  <input type="checkbox" name="remember_me" style="float:left;margin:0.8;" >
+  Remember me
+  </label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <a href="" style="text-decoration:none;">forgot password</a>
+</p>
+
+</form>
+ </body>
+
+</html>
